@@ -5,7 +5,7 @@
   <title>Dashboard Amazônia Mix - Vendas & Faturamento</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Fonte opcional (pode remover se quiser tudo 100% local) -->
+  <!-- Fonte opcional -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Chart.js -->
@@ -202,7 +202,7 @@
     .chart-container {
       position: relative;
       width: 100%;
-      height: 260px; /* pode reduzir para 220px se quiser ainda mais leve */
+      height: 260px;
     }
 
     /* TABELA */
@@ -353,17 +353,17 @@
     <!-- KPI CARDS -->
     <section class="kpi-grid">
       <div class="kpi-card">
-        <div class="kpi-label">Faturamento Q4 2024 (Out–Dez)</div>
-        <div class="kpi-main">R$ 284.786,31</div>
-        <div class="kpi-sub">Out/24 + Nov/24 + Dez/24</div>
+        <div class="kpi-label">Faturamento Q4 2024 (Set–Dez)</div>
+        <div class="kpi-main">R$ 384.626,23</div>
+        <div class="kpi-sub">Set/24 a Dez/24</div>
         <div class="kpi-badge">
-          ▲ +41,8% vs Nov/23
+          ▲ +66,0% vs Nov/23
         </div>
       </div>
 
       <div class="kpi-card">
         <div class="kpi-label">Faturamento 2025 (Jan–Nov)</div>
-        <div class="kpi-main">R$ 1.074.693,00</div>
+        <div class="kpi-main">R$ 1.206.728,64</div>
         <div class="kpi-sub">Sem incluir Dezembro/2025</div>
         <div class="kpi-badge">
           ▲ Crescimento consistente ao longo do ano
@@ -372,10 +372,10 @@
 
       <div class="kpi-card">
         <div class="kpi-label">Crescimento Outubro & Novembro</div>
-        <div class="kpi-main">+37,5%  •  +38,8%</div>
+        <div class="kpi-main">+19,3%  •  +18,6%</div>
         <div class="kpi-sub">Out/24 → Out/25  •  Nov/24 → Nov/25</div>
         <div class="kpi-badge">
-          ▲ Alta forte ano contra ano
+          ▲ Alta ano contra ano
         </div>
       </div>
     </section>
@@ -395,7 +395,7 @@
       <div class="card">
         <div class="card-header">
           <h2>Comparativo Ano a Ano</h2>
-          <span>Outubro e Novembro</span>
+          <span>Setembro, Outubro e Novembro</span>
         </div>
         <div class="chart-container">
           <canvas id="barChart"></canvas>
@@ -407,7 +407,7 @@
     <section class="card table-card">
       <div class="card-header">
         <h2>Resumo Mensal por Ano</h2>
-        <span>Valores em reais (R$)</span>
+        <span>Quantidade de vendas e faturamento (R$)</span>
       </div>
 
       <div class="table-wrapper">
@@ -416,6 +416,7 @@
             <tr>
               <th>Ano</th>
               <th>Mês</th>
+              <th>Qt Vendas</th>
               <th>Faturamento</th>
             </tr>
           </thead>
@@ -424,80 +425,101 @@
             <tr>
               <td>2023</td>
               <td>Novembro</td>
+              <td>—</td>
               <td>R$ 57.047,66</td>
             </tr>
 
             <!-- 2024 -->
             <tr>
               <td>2024</td>
+              <td>Setembro</td>
+              <td>7.473</td>
+              <td>R$ 72.652,00</td>
+            </tr>
+            <tr>
+              <td>2024</td>
               <td>Outubro</td>
-              <td>R$ 72.364,53</td>
+              <td>8.343</td>
+              <td>R$ 84.798,25</td>
             </tr>
             <tr>
               <td>2024</td>
               <td>Novembro</td>
-              <td>R$ 80.913,29</td>
+              <td>9.143</td>
+              <td>R$ 94.667,98</td>
             </tr>
             <tr>
               <td>2024</td>
               <td>Dezembro</td>
-              <td>R$ 131.508,49</td>
+              <td>12.512</td>
+              <td>R$ 132.508,00</td>
             </tr>
 
             <!-- 2025 -->
             <tr>
               <td>2025</td>
               <td>Janeiro</td>
-              <td>R$ 104.535,27</td>
+              <td>11.461</td>
+              <td>R$ 129.176,39</td>
             </tr>
             <tr>
               <td>2025</td>
               <td>Fevereiro</td>
+              <td>8.909</td>
               <td>R$ 102.743,04</td>
             </tr>
             <tr>
               <td>2025</td>
               <td>Março</td>
+              <td>9.932</td>
               <td>R$ 104.535,27</td>
             </tr>
             <tr>
               <td>2025</td>
               <td>Abril</td>
-              <td>—</td>
+              <td>9.958</td>
+              <td>R$ 105.781,37</td>
             </tr>
             <tr>
               <td>2025</td>
               <td>Maio</td>
+              <td>10.414</td>
               <td>R$ 111.008,04</td>
             </tr>
             <tr>
               <td>2025</td>
               <td>Junho</td>
+              <td>11.824</td>
               <td>R$ 126.265,81</td>
             </tr>
             <tr>
               <td>2025</td>
               <td>Julho</td>
+              <td>10.191</td>
               <td>R$ 113.632,31</td>
             </tr>
             <tr>
               <td>2025</td>
               <td>Agosto</td>
+              <td>8.759</td>
               <td>R$ 95.565,78</td>
             </tr>
             <tr>
               <td>2025</td>
               <td>Setembro</td>
+              <td>9.585</td>
               <td>R$ 104.585,75</td>
             </tr>
             <tr>
               <td>2025</td>
               <td>Outubro</td>
-              <td>R$ 99.528,55</td>
+              <td>8.813</td>
+              <td>R$ 101.141,70</td>
             </tr>
             <tr>
               <td>2025</td>
               <td>Novembro</td>
+              <td>9.921</td>
               <td>R$ 112.293,18</td>
             </tr>
           </tbody>
@@ -650,11 +672,18 @@
     // Labels completas do ano
     const labelsAno = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
 
-    // 2024: só temos Out, Nov e Dez
-    const dados2024 = [null, null, null, null, null, null, null, null, null, 72364.53, 80913.29, 131508.49];
+    // 2024: temos Set, Out, Nov, Dez
+    const dados2024 = [
+      null, null, null, null, null, null, null, null,
+      72652.00, 84798.25, 94667.98, 132508.00
+    ];
 
-    // 2025: temos Jan–Nov (Abril sem dado, Dez sem dado)
-    const dados2025 = [104535.27, 102743.04, 104535.27, null, 111008.04, 126265.81, 113632.31, 95565.78, 104585.75, 99528.55, 112293.18, null];
+    // 2025: Jan–Nov (Dez sem dado)
+    const dados2025 = [
+      129176.39, 102743.04, 104535.27, 105781.37,
+      111008.04, 126265.81, 113632.31, 95565.78,
+      104585.75, 101141.70, 112293.18, null
+    ];
 
     // LINE CHART
     const lineCtx = document.getElementById("lineChart");
@@ -727,21 +756,21 @@
       }
     });
 
-    // BAR CHART – Out & Nov 2024 x 2025
+    // BAR CHART – Set, Out e Nov 2024 x 2025
     const barCtx = document.getElementById("barChart");
     new Chart(barCtx, {
       type: "bar",
       data: {
-        labels: ["Outubro", "Novembro"],
+        labels: ["Setembro", "Outubro", "Novembro"],
         datasets: [
           {
             label: "2024",
-            data: [72364.53, 80913.29],
+            data: [72652.00, 84798.25, 94667.98],
             backgroundColor: "#5c2684"
           },
           {
             label: "2025",
-            data: [99528.55, 112293.18],
+            data: [104585.75, 101141.70, 112293.18],
             backgroundColor: "#ff9f1c"
           }
         ]
