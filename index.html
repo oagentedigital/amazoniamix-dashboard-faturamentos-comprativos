@@ -103,46 +103,12 @@
     }
 
     /* KPI CARDS */
-
     .kpi-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0,1fr));
       gap: 16px;
       margin-bottom: 24px;
     }
-    <!-- KPI COMPARATIVOS MÊS VS MÊS -->
-    <section class="kpi-grid" style="margin-top: -8px;">
-  
-      <!-- SETEMBRO -->
-      <div class="kpi-card">
-      <div class="kpi-label">Setembro 2024 → 2025</div>
-      <div class="kpi-main">+ R$ 31.933,75</div>
-      <div class="kpi-sub">Crescimento de 43,95%</div>
-      <div class="kpi-badge">
-      ▲ Alta significativa no período
-      </div>
-    </div>
-
-    <!-- OUTUBRO -->
-      <div class="kpi-card">
-      <div class="kpi-label">Outubro 2024 → 2025</div>
-      <div class="kpi-main">+ R$ 16.343,45</div>
-      <div class="kpi-sub">Crescimento de 19,27%</div>
-      <div class="kpi-badge">
-      ▲ Evolução moderada e consistente
-      </div>
-    </div>
-
-    <!-- NOVEMBRO -->
-    <div class="kpi-card">
-      <div class="kpi-label">Novembro 2024 → 2025</div>
-      <div class="kpi-main">+ R$ 17.625,20</div>
-      <div class="kpi-sub">Crescimento de 18,62%</div>
-      <div class="kpi-badge">
-      ▲ Boa alta ano contra ano
-      </div>
-    </div>
-</section>
 
     .kpi-card {
       background: radial-gradient(circle at top left, rgba(122,61,176,0.45), rgba(21,22,54,0.95));
@@ -199,7 +165,6 @@
     }
 
     /* CHARTS */
-
     .charts-grid {
       display: grid;
       grid-template-columns: minmax(0,2.3fr) minmax(0,1.7fr);
@@ -231,7 +196,6 @@
       color: var(--texto-sec);
     }
 
-    /* Altura fixa para os gráficos */
     .chart-container {
       position: relative;
       width: 100%;
@@ -239,10 +203,7 @@
     }
 
     /* TABELA */
-
-    .table-card {
-      margin-bottom: 24px;
-    }
+    .table-card { margin-bottom: 24px; }
 
     .table-wrapper {
       max-height: 260px;
@@ -271,18 +232,10 @@
       white-space: nowrap;
     }
 
-    tbody tr:nth-child(odd) {
-      background: rgba(255,255,255,0.01);
-    }
+    tbody tr:nth-child(odd) { background: rgba(255,255,255,0.01); }
+    tbody tr:nth-child(even) { background: rgba(255,255,255,0.04); }
 
-    tbody tr:nth-child(even) {
-      background: rgba(255,255,255,0.04);
-    }
-
-    th {
-      font-weight: 500;
-    }
-
+    th { font-weight: 500; }
     /* DOWNLOADS */
 
     .downloads-grid {
@@ -374,7 +327,7 @@
         <img src="logo-amazonia-mix.png" alt="Logo Amazônia Mix">
         <div class="titulo-area">
           <h1>Dashboard de Vendas & Faturamento</h1>
-          <p>Amazônia Mix • Relatórios 2023 • 2024 • 2025</p>
+          <p>Amazônia Mix • Relatórios 2024 • 2025</p>
         </div>
       </div>
       <div class="tag-ano">
@@ -383,14 +336,14 @@
       </div>
     </header>
 
-    <!-- KPI CARDS -->
+    <!-- KPI CARDS PRINCIPAIS (1ª LINHA) -->
     <section class="kpi-grid">
       <div class="kpi-card">
         <div class="kpi-label">Faturamento Q4 2024 (Set–Dez)</div>
         <div class="kpi-main">R$ 384.626,23</div>
         <div class="kpi-sub">Set/24 a Dez/24</div>
         <div class="kpi-badge">
-          ▲ +66,0% vs Nov/23
+          ▲ Alta forte no último quadrimestre
         </div>
       </div>
 
@@ -409,6 +362,39 @@
         <div class="kpi-sub">Out/24 → Out/25  •  Nov/24 → Nov/25</div>
         <div class="kpi-badge">
           ▲ Alta ano contra ano
+        </div>
+      </div>
+    </section>
+
+    <!-- KPI COMPARATIVOS MÊS VS MÊS (2ª LINHA) -->
+    <section class="kpi-grid" style="margin-top: -8px;">
+      <!-- SETEMBRO -->
+      <div class="kpi-card">
+        <div class="kpi-label">Setembro 2024 → 2025</div>
+        <div class="kpi-main">+ R$ 31.933,75</div>
+        <div class="kpi-sub">Crescimento de 43,95%</div>
+        <div class="kpi-badge">
+          ▲ Alta significativa no período
+        </div>
+      </div>
+
+      <!-- OUTUBRO -->
+      <div class="kpi-card">
+        <div class="kpi-label">Outubro 2024 → 2025</div>
+        <div class="kpi-main">+ R$ 16.343,45</div>
+        <div class="kpi-sub">Crescimento de 19,27%</div>
+        <div class="kpi-badge">
+          ▲ Evolução moderada e consistente
+        </div>
+      </div>
+
+      <!-- NOVEMBRO -->
+      <div class="kpi-card">
+        <div class="kpi-label">Novembro 2024 → 2025</div>
+        <div class="kpi-main">+ R$ 17.625,20</div>
+        <div class="kpi-sub">Crescimento de 18,62%</div>
+        <div class="kpi-badge">
+          ▲ Boa alta ano contra ano
         </div>
       </div>
     </section>
@@ -454,14 +440,6 @@
             </tr>
           </thead>
           <tbody>
-            <!-- 2023 -->
-            <tr>
-              <td>2023</td>
-              <td>Novembro</td>
-              <td>—</td>
-              <td>R$ 57.047,66</td>
-            </tr>
-
             <!-- 2024 -->
             <tr>
               <td>2024</td>
@@ -568,34 +546,11 @@
       </div>
 
       <div class="downloads-grid">
-        <!-- 2023 -->
-        <div class="download-item">
-          <strong>Novembro 2023</strong>
-          <span>Relatório de Produtos Vendidos por Mês</span>
-          <a href="Relatório de Produtos Vendidos por Mês Novembro 20023.pdf" download>
-            ⬇ Baixar PDF
-          </a>
-        </div>
-        <div class="download-item">
-          <strong>Dezembro 2023</strong>
-          <span>Relatório de Produtos Vendidos por Mês</span>
-          <a href="Relatório de Produtos Vendidos por Mês Dezembro 2023.pdf" download>
-            ⬇ Baixar PDF
-          </a>
-        </div>
-
         <!-- 2024 -->
         <div class="download-item">
           <strong>Outubro 2024</strong>
           <span>Relatório de Produtos Vendidos por Mês</span>
           <a href="Relatorio de produtos Mes Outrubro 2024.pdf" download>
-            ⬇ Baixar PDF
-          </a>
-        </div>
-        <div class="download-item">
-          <strong>Outubro 2024 (Versão 2)</strong>
-          <span>Relatório (nome alternativo)</span>
-          <a href="produtos vendido por meis Outubro 2024.pdf" download>
             ⬇ Baixar PDF
           </a>
         </div>
@@ -699,7 +654,6 @@
       Amazônia Mix • Dashboard gerado com base nos relatórios de vendas (Gdoor Sistemas)
     </footer>
   </div>
-
   <!-- SCRIPT DOS GRÁFICOS -->
   <script>
     // Labels completas do ano
@@ -848,5 +802,3 @@
   </script>
 </body>
 </html>
-
-
